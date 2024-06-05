@@ -32,7 +32,7 @@ cdef extern from "../src/emulator.h" namespace "cynes":
 cdef class NESHeadless:
     cdef NES * __emulator
 
-    cdef u8[:, :, :] __frame_buffer
+    cdef public u8[:, :, :] __frame_buffer
 
     cdef u32 __state_size
 
